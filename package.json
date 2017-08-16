@@ -1,0 +1,24 @@
+{
+  "name": "wdemo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@types/jest": "^20.0.6",
+    "@types/node": "^8.0.20",
+    "@types/react": "^16.0.2",
+    "@types/react-dom": "^15.5.2",
+    "react": "16.0.0-alpha.3",
+    "react-dom": "16.0.0-alpha.3",
+    "react-motion": "^0.5.0"
+  },
+  "devDependencies": {
+    "@types/react-motion": "^0.0.23",
+    "react-scripts-ts": "2.5.0"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
+  }
+}
