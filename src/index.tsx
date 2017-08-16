@@ -9,10 +9,15 @@ console.log('before render');
 // tslint:disable-next-line:no-console
 DemoRender.render(<DemoComponent />, DemoRender.dumpTree);
 
+const isOnWeb: boolean = global.hasOwnProperty('document');
+
 function mainloop() {
-  renderCanvas();
-  const tree = DemoRender.renderTreeToString().join();
-  document.body.innerHTML = `<div><pre>${tree}</pre></div>`;
+  if (isOnWeb) {
+    const tree = DemoRender.renderTreeToString().join();
+    document.body.innerHTML = `<div><pre>${tree}</pre></div>`;
+  } else {
+    renderCanvas();
+  }
 }
 
 setInterval(DemoRender.dumpTree, 2000);
