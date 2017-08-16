@@ -1,0 +1,6 @@
+[submodule "externals/Chakra-Samples"]
+	path = externals/Chakra-Samples
+	url = https://github.com/Microsoft/Chakra-Samples.git
+[submodule "externals/ChakraCore"]
+	path = externals/ChakraCore
+	url = git://github.com/Microsoft/ChakraCore.git
